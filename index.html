@@ -1,23 +1,95 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-GB">
 
   <head>
     <meta name="viewport" content="width=device-width" charset="utf-8" />
     <title>Delisha-Ann Naicker - Personal Portfolio</title>
+    <link href="stylesheet.css" rel="stylesheet">
   </head>
 
   <body>
   <header>
-    <nav aria-roledescription="navigation-menu">
-        <ul>
-            <li>
-                
-            </li>
-        </ul>
-
+    <nav aria-role="navigation-menu" >
+      <ul class="navigation">
+        <li class = "navigation">
+          <a class="navigation active" href="index.html">Bio</a>
+        </li>
+        <li class = "navigation">
+          <a class="navigation" href="skills.html">Skills</a>
+        </li>
+        <li class = "navigation">
+          <a class="navigation" href="projects.html">Projects</a>
+        </li>
+        <li class = "navigation">
+          <a class="navigation" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </nav>
-
   </header>
+  <div id="bio">
+    <div class="row">
+      <div class="column">
+        <br><br><br><br>
+        <h1> Delisha-Ann Naicker</h1>
+      </div>
+      <div class="column">
+        <img src="images/laura-chouette-nkWnc-W_GP8-unsplash.jpg" alt="" width="100%">
+      </div>
+  </div>
+</div>
+  
+  <div id="skills">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a odit iusto illum cupiditate fugiat provident neque, libero quod qui quas magni, blanditiis unde? Ad exercitationem laborum fugit. Labore, obcaecati!</p>
+  </div>
+  <div id="projects">
+    <p id="project-header">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio tenetur laboriosam earum magni et repellendus, saepe vitae deserunt, numquam tempore quisquam dicta, similique ducimus optio impedit facilis commodi? Placeat?</p>
+  </div>
+  <div id="contact">
+    <div class="row">
+      <div class="column">
+        <h1>Let's connect!</h1>
+        <form>
+          <label for="fname">Name:</label><br>
+          <input type="text" id="fname" name="fname" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="22"></textarea>
+        </form>
+      </div>
+      <div class="column">
+        <div>
+        <h3>VISIT MY SOCIALS</h3><br>
+        <div class="social-row">
+          <div class="social-column">
+            <img src="images/linkedin.png" alt="" height="20px">
+          </div>
+          <div class="social-column">
+            <img src="images/github.png" alt="" height="20px">
+          </div>
+          <div class="social-column">
+            <img src="images/instagram.png" alt="" height="20px">
+          </div>
+        </div>  
+        <br>
+        <b>ADDRESS</b>
+        <p>803 Rondebosch Oaks <br>
+          34 Albion Road <br>
+          Rondebosch <br>
+          Cape Town</p>
+        <br>
+        <b>EMAIL</b>
+        <p>delisha.ann.naicker@gmail.com</p>
+        <br>
+        <b>CONTACT NUMBER</b>
+        <p>+27824488018</p>
+        </div>
+      </div>
+  </div>
+
+
   <footer>
 
   </footer>  

@@ -1,0 +1,81 @@
+* {
+    font: 15px Arial, sans-serif;
+    color: #edeced;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+ul.navigation {
+    list-style-type: none;
+    padding-left: 50px;
+    overflow: hidden;
+    background-color: #333333;
+    
+  }
+
+li.navigation {
+    display: inline;
+    float:left;
+}
+
+a.navigation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+a.navigation:hover {
+    background-color: #000000;
+  }
+
+li a.active {
+    background-color: #004f6d;
+  }
+
+
+
+#bio {
+    background-color: #060724;
+}
+
+#skills {
+    background-color: #004f6d;
+}
+
+#projects {
+    background-color: #edeced;
+}
+
+#contact {
+    background-color: #004f6d;
+}
+
+#project-header {
+  color: #060724;
+}
+.column {
+    float:left;
+    width:50.00%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .social-column {
+    float:left;
+    width:5.00%;
+}
+.social-row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
