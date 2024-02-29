@@ -12,7 +12,7 @@
     <nav aria-role="navigation-menu" >
       <ul class="navigation">
         <li class = "navigation">
-          <a class="navigation active" href="index.html">Bio</a>
+          <a class="navigation active" href="index.html">About Me</a>
         </li>
         <li class = "navigation">
           <a class="navigation" href="skills.html">Skills</a>
@@ -29,8 +29,12 @@
   <div id="bio">
     <div class="row">
       <div class="column">
-        <br><br><br><br>
-        <h1> Delisha-Ann Naicker</h1>
+        <div class="text-block">
+          <br><br><br>
+        <h1>Precision in Code,<br>Passion for Problem Solving.</h1><br><br><br>
+        <h4>Delisha-Ann Naicker</h4>
+        <h5>Software Developer</h5>
+      </div>
       </div>
       <div class="column">
         <img src="images/laura-chouette-nkWnc-W_GP8-unsplash.jpg" alt="" width="100%">
@@ -38,16 +42,20 @@
   </div>
 </div>
   
-  <div id="skills">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a odit iusto illum cupiditate fugiat provident neque, libero quod qui quas magni, blanditiis unde? Ad exercitationem laborum fugit. Labore, obcaecati!</p>
+  <div id="about_me" class="text-block">
+    <h1>About Me</h1>
   </div>
-  <div id="projects">
-    <p id="project-header">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio tenetur laboriosam earum magni et repellendus, saepe vitae deserunt, numquam tempore quisquam dicta, similique ducimus optio impedit facilis commodi? Placeat?</p>
+  <div id="skills" class="text-block">
+    <h1 id="skills_header">Efficiency through understanding.</h1>
   </div>
-  <div id="contact">
+  <div id="projects" class="text-block">
+    <h2>KEY PROJECTS</h2>
+  </div>
+  <div id="contact" class="text-block">
     <div class="row">
-      <div class="column">
-        <h1>Let's connect!</h1>
+      <div class="column", class= "text-block">
+        <h2>Let's connect!</h2>
+        <div class="container">
         <form>
           <label for="fname">Name:</label><br>
           <input type="text" id="fname" name="fname" required><br>
@@ -59,7 +67,8 @@
           <textarea id="message" name="message" rows="4" cols="22"></textarea>
         </form>
       </div>
-      <div class="column">
+      </div>
+      <div class="column", class="text-block">
         <div>
         <h3>VISIT MY SOCIALS</h3><br>
         <div class="social-row">
@@ -88,11 +97,12 @@
         </div>
       </div>
   </div>
-
-
   <footer>
+    <div id="footer" class="text-block">
+      <p>&copy; Delisha-Ann Naicker 2024</p>
+    </div>
 
-  </footer>  
+  </footer>    
   </body>
-
+  
 </html>

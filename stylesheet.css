@@ -47,18 +47,27 @@ li a.active {
 }
 
 #skills {
+    background-color: #edeced;
+}
+
+#about_me {
     background-color: #004f6d;
 }
 
 #projects {
-    background-color: #edeced;
+    background-color: #060724;
 }
 
 #contact {
     background-color: #004f6d;
 }
 
-#project-header {
+#footer {
+  background-color: #333333;
+  text-align: center;
+}
+
+#skills_header {
   color: #060724;
 }
 .column {
@@ -79,3 +88,43 @@ li a.active {
     display: table;
     clear: both;
   }
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 { 
+    font-size: 28px;
+}
+
+h4 { 
+    font-size: 21px;
+}
+
+h5 { 
+  font-size: 18px;
+}
+
+.text-block {
+  padding: 30px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 40%;
+  border-radius: 16px;
+  box-shadow: 7px 7px 10px #000000;
+}
+
+label {
+  color:#060724;
+}
+
+input {
+  color:#060724;
+}
