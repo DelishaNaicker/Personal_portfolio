@@ -90,19 +90,19 @@ li a.active {
   }
 
 h1 {
-    font-size: 75px;
+    font-size: 4.4rem;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 h3 { 
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 h4 { 
-    font-size: 21px;
+    font-size: 1.3125rem;
 }
 
 h5 { 
@@ -111,6 +111,10 @@ h5 {
 
 .text-block {
   padding: 30px;
+}
+
+#headline {
+  max-height: 500px;
 }
 
 .container {
@@ -127,4 +131,10 @@ label {
 
 input {
   color:#060724;
+}
+
+#profile-image {
+  background-image: url("images/laura-chouette-nkWnc-W_GP8-unsplash.jpg");
+  background-size: cover;
+  height: 500px;
 }
