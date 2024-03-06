@@ -12,6 +12,12 @@ nav {
   width:100%;
 }
 
+
+#navbar {
+  z-index: 2;
+  overflow: hidden;
+}
+
 ul.navigation {
     list-style-type: none;
     padding-left: 50px;
@@ -48,13 +54,13 @@ li a.active {
 }
 
 #skills {
-    background-color: #edeced;
+    background-color: #004f6d;
 }
 
 
 
 #projects {
-    background-color: #060724;
+    background-color: #edeced;
 }
 
 #contact {
@@ -95,6 +101,9 @@ h5 {
   padding: 30px;
 }
 
+.justified {
+  text-align: justify;
+}
 
 .container {
   background-color: #ffffff;
@@ -127,6 +136,18 @@ input {
 #about-me {
   background-color: #07263e;
 }
+
+button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -148,6 +169,7 @@ input {
 
 .flex-item-right-60 {
   flex: 62%;
+  padding: 3rem;
 }
 
 @media (max-width: 800px) {
@@ -162,4 +184,12 @@ input {
 
 .grey-bg {
   background-color: #edeced;
+}
+
+.drkblue-text {
+  color:#060724;
+}
+
+ol li {
+  color:#060724;
 }
