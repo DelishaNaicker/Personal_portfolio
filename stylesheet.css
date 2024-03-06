@@ -3,6 +3,7 @@
     color: #edeced;
     margin-top: 0px;
     margin-bottom: 0px;
+    box-sizing: border-box;
 }
 
 nav {
@@ -50,9 +51,7 @@ li a.active {
     background-color: #edeced;
 }
 
-#about_me {
-    background-color: #004f6d;
-}
+
 
 #projects {
     background-color: #060724;
@@ -70,24 +69,7 @@ li a.active {
 #skills_header {
   color: #060724;
 }
-.column {
-    float:left;
-    width:50.00%;
-}
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .social-column {
-    float:left;
-    width:5.00%;
-}
-.social-row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
 
 h1 {
     font-size: 4.4rem;
@@ -113,9 +95,6 @@ h5 {
   padding: 30px;
 }
 
-#headline {
-  max-height: 500px;
-}
 
 .container {
   background-color: #ffffff;
@@ -134,7 +113,53 @@ input {
 }
 
 #profile-image {
-  background-image: url("images/laura-chouette-nkWnc-W_GP8-unsplash.jpg");
   background-size: cover;
-  height: 500px;
+  height: 40rem;
+  
+}
+
+#about-image {
+  background-size: cover;
+  height: 40rem;
+  transform: scaleX(-1);
+}
+
+#about-me {
+  background-color: #07263e;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left-50{
+  flex: 50%;
+}
+
+.flex-item-right-50 {
+  flex: 50%;
+}
+
+.flex-item-left-40{
+  flex: 38%;
+}
+
+.flex-item-right-60 {
+  flex: 62%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+#headline {
+  background-color: #ffffff;
+}
+
+.grey-bg {
+  background-color: #edeced;
 }
