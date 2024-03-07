@@ -206,3 +206,25 @@ ol li {
 #contact p, b {
   color: #060724;
 }
+
+.socials {
+  margin:7px;
+}
+
+.skill-container {
+  width: 75%;
+  background-color: #edeced;
+  margin:auto;
+  
+}
+
+.skills {
+  text-align: right;
+  padding:5px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #060724;}
+.css {width: 80%; background-color: #060724;}
+.js {width: 65%; background-color: #060724;}
+.php {width: 60%; background-color: #060724;}
