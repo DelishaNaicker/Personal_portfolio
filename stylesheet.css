@@ -215,7 +215,7 @@ ol li {
   width: 75%;
   background-color: #edeced;
   margin:auto;
-  
+  border-radius: 15px;
 }
 
 .skills {
@@ -224,7 +224,7 @@ ol li {
   color: white;
 }
 
-.html {width: 90%; background-color: #060724;}
-.css {width: 80%; background-color: #060724;}
-.js {width: 65%; background-color: #060724;}
-.php {width: 60%; background-color: #060724;}
+.html {width: 80%; background-color: #060724; border-radius: 15px;}
+.sql {width: 90%; background-color: #060724; border-radius: 15px;}
+.python {width: 75%; background-color: #060724;border-radius: 15px;}
+.exl {width: 80%; background-color: #060724;border-radius: 15px;}
