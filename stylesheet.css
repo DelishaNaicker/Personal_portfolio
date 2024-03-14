@@ -42,14 +42,14 @@ a.navigation:hover {background-color: #000000;}
 
 li a.active {background-color: #004f6d;}
 
-#top {background-color: #060724;}
-#data-vis {background-color: #004f6d;}
-#improvements {background-color: #060724;}
-#automation {background-color: #060724;}
-#contact {background-color: #edeced;}
+#top {background-color: #060724; height: 100vh; padding-top: 50px;}
+#data-vis {background-color: #004f6d; height: 100vh; padding-top: 50px;}
+#improvements {background-color: #060724; height: 100vh; padding-top: 50px;}
+#automation {background-color: #060724;height: 100vh; padding-top: 50px;}
+#contact {background-color: #edeced;height: 100vh; padding-top: 50px;}
 #footer {background-color: #333333; text-align: center;}
 #skills_header {color: #edeced;}
-#about-me {background-color: #07263e;}
+#about-me {background-color: #07263e; height: 100vh; padding-top: 50px;}
 
 
 h1 {font-size: 4.4rem;}
@@ -58,31 +58,55 @@ h3 { font-size: 1.75rem;}
 h4 { font-size: 1.3125rem;}
 h5 { font-size: 18px;}
 
+#data-vis li {font-size: 1.4rem;}
+
+ul {
+  list-style-image: url('/images/checked.png');
+}
+.fade-item {
+  transition: 2s all ease-in-out;
+  opacity: 0;
+}
+
+.fadein {
+  animation: fadeIn 0.9s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .text-block {padding: 30px;}
 
 .justified {text-align: justify;}
 
 .container {
-  background-color: #ffffff;
   padding: 30px;
-  width: 40%;
+  width: 80%;
   border-radius: 16px;
-  box-shadow: 7px 7px 10px #000000;
+  text-align: left;
 }
 
-/* label {
+ label {
   color:#060724;
 }
 
 input {
   color:#060724;
-} */
+} 
 
 #profile-image {
   background-size: cover; height: 40rem;  }
 
 #about-image {
-  background-size: cover;
+
+  background-size:cover;
   height: 40rem;
   transform: scaleX(-1);
 }
@@ -118,8 +142,14 @@ button {
 
 @media (max-width: 800px) {
   .flex-container {
-    flex-direction: column;
-  }
+    flex-direction: column;}
+  #top {height: auto;}
+  #data-vis {height: auto;}
+  #improvements {height: auto;}
+  #automation {height: auto;}
+  #contact {height: auto;}
+  #about-me {height: auto;} 
+  iframe {display: none;}
 }
 
 #headline {background-color: #ffffff;}
@@ -130,7 +160,7 @@ button {
 
 ol li {color:#060724;}
 
-#contact p, b {color: #060724;}
+#contact p{color: #060724; font-size: 20px;}
 
 .socials {margin:7px;}
 
@@ -151,3 +181,70 @@ ol li {color:#060724;}
 .sql {width: 90%; background-color: #060724; border-radius: 15px;}
 .python {width: 75%; background-color: #060724;border-radius: 15px;}
 .exl {width: 80%; background-color: #060724;border-radius: 15px;}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #07263e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+iframe {
+  width: 80%;
+  height:60vh;
+}

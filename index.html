@@ -67,22 +67,23 @@
 
     <div id="data-vis" class="text-block">
       <h2 id="skills_header">Data Visualisation &amp; Analysis</h2>
-      <br><br>
       <div class="flex-container">
-        <div class="flex-item-left-33">
-          <h3>Projects</h3>
+        <div class="flex-item-left-50" style="padding-top:30px">
+          <h3 style="text-decoration: underline;">Projects</h3>
           <br>
-          <p>Developed queries in Python to display meaningful data on live dashboards linked to Zoho Analytics via API for business insights and decision-making.</p>
+          <ul class="list_wrapper">
+          <li class="fade-item">Developed queries in Python to display meaningful data on live dashboards linked to Zoho Analytics via API for business insights and decision-making.</li>
           <br>
-          <p>Developed Python program to auto-select sheets of social media content in an Excel workbook for over 30 clients per month.</p>
+          <li class="fade-item">Developed Python program to auto-select sheets of social media content in an Excel workbook for over 30 clients per month.</li>
           <br>
-          <p>Developed dashboards in Excel linked to SQL queries and automated insights.</p>
+          <li class="fade-item">Developed dashboards in Excel linked to SQL queries and automated insights.</li>
           <br>
-          <p>Maintained knowledge repository in internal Wiki using Markdown.</p>
-          <p></p>
+          <li class="fade-item">Maintained knowledge repository in internal Wiki using Markdown.</li>
+          </ul>
+
         </div>
-        <div class="flex-item-middle-33">
-          <h3>Skills</h3> <br>
+        <div class="flex-item-right-50" style="padding-top:30px">
+          <h3 style="text-decoration: underline;">Skills</h3> <br>
           <p>HTML & CSS</p>
           <div class="skill-container">
             <div class="skills html">80%</div>
@@ -105,10 +106,10 @@
           <br><br>
 
         </div>
-        <div class="flex-item-right-33">
+        <!-- <div class="flex-item-right-33">
           <img src="images/whatagraph_live_reports_8a45ac0a60.webp" alt="Web based pie chart" width="100%">
           
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -120,6 +121,7 @@
           <h4>Website Build and Internship in progress...</h4> <br>
           <h4><a href="https://sinazod.github.io/KONNECT.WEBSITE/WEBSITE/" target="_blank">Group Project: Business Website</a></h4> <br>
           <h4> Watch this space :&rpar;</h4> <br>
+          <iframe src="https://sinazod.github.io/KONNECT.WEBSITE/WEBSITE/about" title="CapaCiti OM2 Project"></iframe>
         </div>
       </div>
     </div>
@@ -140,36 +142,76 @@
         </form>
       </div>
       </div> -->
-    <div class="column text-block" id="contact">
-      <div>
+    <div class="column text-block flex-container" id="contact">
+      <div class="flex-item-left-50" style="text-align: left;">
+        <div>
         <h3 class="drkblue-text">VISIT MY SOCIALS</h3><br>
         <a href="https://www.linkedin.com/in/delisha-ann-naicker-710879115/" target="_blank">
-          <img class="socials" src="images/linkedin.png" alt="" height="20px">
+          <img class="socials" src="images/linkedin.png" alt="" height="40px">
         </a>
         <a href="https://github.com/DelishaNaicker" target="_blank">
-          <img class="socials" src="images/github.png" alt="" height="20px">
+          <img class="socials" src="images/github.png" alt="" height="40px">
         </a>
         <a href="mailto:delisha.ann.naicker@gmail.com">
-          <img class="socials" src="images/email.png" alt="" height="20px">
+          <img class="socials" src="images/email.png" alt="" height="40px">
         </a>
         <a href="https://wa.me/27824488018">
-          <img class="socials" src="images/whatsapp.png" alt="" height="20px">
+          <img class="socials" src="images/whatsapp.png" alt="" height="40px">
         </a>
       </div>
          
       <br>
-      <b>ADDRESS</b>
+      <p style="font-weight: bold;">ADDRESS</p>
       <p>803 Rondebosch Oaks <br>
         34 Albion Road <br>
         Rondebosch <br>
         Cape Town</p>
       <br>
-      <b>EMAIL</b>
+      <p style="font-weight: bold;">EMAIL</p>
       <p>delisha.ann.naicker@gmail.com</p>
       <br>
-      <b>CONTACT NUMBER</b>
+      <p style="font-weight: bold;">CONTACT NUMBER</p>
       <p>+27824488018</p>
+      </div>
+
+      <div class="flex-item-right-50">
+        <h3 class="drkblue-text" style="text-align:left; padding-top:30px">SEND ME A MESSAGE</h3><br>
+        <div class="container">
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Enter your email...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write your message here and I will get back to you ASAP" style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
     </div>
+
+    
 
   <footer>
     <div id="footer" class="text-block">
@@ -180,3 +222,15 @@
   </body>
   
 </html>
+
+<script>
+  var items = document.getElementsByClassName("fade-item");
+		for (let i = 0; i < items.length; ++i) {
+      fadeIn(items[i], i * 1000)
+    }
+    function fadeIn (item, delay) {
+      setTimeout(() => {
+        item.classList.add('fadein')
+      }, delay)
+    }
+</script>
