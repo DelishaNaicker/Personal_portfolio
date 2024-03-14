@@ -61,7 +61,7 @@ h5 { font-size: 18px;}
 #data-vis li {font-size: 1.4rem;}
 
 ul {
-  list-style-image: url('/images/checked.png');
+  list-style-image: url('images/checked.png');
 }
 .fade-item {
   transition: 2s all ease-in-out;
