@@ -102,7 +102,7 @@ input {
 } 
 
 #profile-image {
-  background-size: cover; height: 40rem;  }
+  background-size: cover; width: 40vw;  }
 
 #about-image {
 
@@ -127,6 +127,7 @@ button {
   flex-direction: row;
   font-size: 30px;
   text-align: center;
+  overflow: hidden;
 }
 
 .flex-item-left-50, .flex-item-right-50{flex: 50%;}
@@ -151,6 +152,8 @@ button {
   #about-me {height: auto;} 
   iframe {display: none;}
   #skill-container {flex-direction: row;}
+  #skill-container img {height: 60px}
+  #profile-image {background-size: cover; width: 80vw;  }
 }
 
 #headline {background-color: #ffffff;}
