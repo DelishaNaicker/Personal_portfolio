@@ -58,7 +58,7 @@ h3 { font-size: 1.75rem;}
 h4 { font-size: 1.3125rem;}
 h5 { font-size: 18px;}
 
-#data-vis li {font-size: 1.4rem;}
+#data-vis li {font-size: 1.4rem; text-align: left;}
 
 ul {
   list-style-image: url('images/checked.png');
@@ -150,6 +150,7 @@ button {
   #contact {height: auto;}
   #about-me {height: auto;} 
   iframe {display: none;}
+  #skill-container {flex-direction: row;}
 }
 
 #headline {background-color: #ffffff;}
@@ -206,7 +207,11 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  float: right;
+  position: absolute;
+  margin-top: 30px;
+  left:50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Style the container */
@@ -218,15 +223,13 @@ input[type=submit] {
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
-  width: 25%;
-  margin-top: 6px;
+  width: 100%;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 75%;
-  margin-top: 6px;
+  width: 100%;
 }
 
 /* Clear floats after the columns */
@@ -234,14 +237,6 @@ input[type=submit] {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
 }
 
 iframe {
